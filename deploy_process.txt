@@ -1,0 +1,40 @@
+Step-1:-Create a folder(CWD)  and copy django project which one you want to deploy.
+Step-2:-Create a Repository  in GitHub and push total django project into it.
+Step-3:-Creating Repository process
+        -Open GitBash in Pc and go to current folder.
+        -git init
+        -git add .
+        -git commit -m "commit"
+        -git status
+        -git remote add origin https://github.com/veeresh-vla/deployrepo.git
+        -git branch -M main
+        -git push -u origin main
+Step-4:-deploy on PythonAnyWhere.commit
+    To Create Virtual Environment:
+    -Go to cosoles-->GitBash
+    $ mkvirtualenvs --python=python 3.10 mypro
+    here mypro :- Name of the virtual Environment
+    -(myproj) 14:50 ~ $  
+    It means virtual environment created and currently active. 
+Step-5:- Check Django installed version in PC and install same in PythonAnyWhere
+    Ex:-Django=5.0
+    $pip list
+    Check django version: 
+        C:\Windows\System32>py 
+        >>> import django 
+        >>> django.__version__ 
+        '4.1'
+    $pip install -U django==5.0
+Step-6:-Copy our application from github to virtual env(pythonanywhere.com) 
+        github:https://github.com/maheshdj123/djangorepo.git 
+        Command:
+        $git clone https://github.com/maheshdj123/djangorepo.git 
+        $ls 
+        $cd djangorepo 
+        $ls 
+        $cd firstproject 
+        $pwd 
+Step-7:-Configure on the web tab:
+        source code path:/home/maheshproject/djangorepo/firstproject 
+        virtual env:/home/maheshproject/.virtualenvs/myproj 
+        .virtualenvs------>. means hidden directory 
